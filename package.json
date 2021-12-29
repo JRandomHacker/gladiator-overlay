@@ -1,0 +1,43 @@
+{
+  "name": "gladiator-overlay",
+  "version": "0.0.0",
+  "description": "Graphics for Gladiator Tournament Coverage",
+  "homepage": "https://twitch.tv/gladiatormtga",
+  "author": {
+    "name": "Justin Koehler",
+    "email": "jrandomhacker172342@gmail.com",
+    "url": ""
+  },
+  "files": [
+    "dashboard",
+    "graphics",
+    "extension.js",
+    "extension"
+  ],
+  "keywords": [
+    "magic",
+    "mtga",
+    "gladiator",
+    "nodecg-bundle"
+  ],
+  "nodecg": {
+    "compatibleRange": "^1.1.1",
+    "dashboardPanels": [
+      {
+        "name": "panel",
+        "title": "Controls",
+        "width": 2,
+        "file": "panel.html",
+        "headerColor": "#525F78"
+      }
+    ],
+    "graphics": [
+      {
+        "file": "index.html",
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "license": "MIT"
+}
