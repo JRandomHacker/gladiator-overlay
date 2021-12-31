@@ -20,6 +20,20 @@
     "gladiator",
     "nodecg-bundle"
   ],
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "targets": {
+    "graphic": {
+      "source": "src/index.html",
+      "distDir": "graphics"
+    },
+    "panel": {
+      "source": "src/panel.html",
+      "distDir": "dashboard"
+    }
+  },
   "nodecg": {
     "compatibleRange": "^1.1.1",
     "dashboardPanels": [
@@ -39,5 +53,8 @@
       }
     ]
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.0.1"
+  }
 }
