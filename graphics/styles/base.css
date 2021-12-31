@@ -1,0 +1,125 @@
+.container {
+        display: grid; 
+        grid-template-columns: 245px 1675px; 
+        grid-template-rows: 135px 945px; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+        "Logo Titlebar"
+        "Sidebar Gameplay"; 
+}
+
+.Logo {
+	grid-area: Logo; 
+	background-color: #1A1A1C;
+    padding: 10px;
+}
+.Titlebar {
+	grid-area: Titlebar; 
+	background-color: #1A1A1C;
+    margin-bottom: -10px;
+}
+.Sidebar { 
+	grid-area: Sidebar;
+	background-color: #1A1A1C;
+    color: #EFF4F3;
+}
+.Gameplay {
+	grid-area: Gameplay; 
+	border-top: 10px solid #562F72;
+	border-left: 10px solid #562F72;
+	border-top-left-radius: 10px;
+}
+
+.column {
+	float: left;
+}
+
+.logos {
+	width: 50%;
+	height: 100%;
+}
+
+.sub-badge {
+	max-width: 100%;
+	max-height: 100%
+}
+
+.setsymbol {
+	font-size: 7.5em;
+	color: #DE8D00
+}
+
+.maintitle {
+	width: 1410px;
+	line-height: 135px;
+}
+
+.coverage {
+	width: 245px;
+    color: #EFF4F3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.coverage-header {
+    font-size: 14pt;
+}
+
+.coverage-names {
+    list-style-type: none;
+    padding: 0;
+}
+
+.main-gradient {
+	background: linear-gradient(to right, #61B7BF, #ED8A81);
+	color: transparent;
+	background-clip: text;
+	-webkit-background-clip: text;
+	font-size: 4em;
+	text-align: center;
+	margin: 0px;
+}
+
+.player {
+    height: 340px;
+    color: #9FD9E4;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 40px;
+}
+
+.player-divider {
+    height: 80px;
+    color: #58227F;
+    background-color: #75C0B2;
+    font: bold 36pt "Permanent Marker";
+    text-align: center;
+    line-height: 80px;
+    transform: skew(0deg, -6deg);
+}
+
+.player-name {
+    font: bold 24pt "Josefin Sans";
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.deck-name {
+    font: normal 24pt "Josefin Sans";
+}
+
+.opponent {
+    transform: rotate(180deg);
+}
+
+body {
+        font-family: sans-serif;
+		overflow: hidden;
+		margin: 0px;
+}
+
+.monospace {
+        font-family: monospace;
+}
+
