@@ -2,36 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-	<style>
-		.monospace {
-			font-family: monospace;
-		}
-	</style>
+    <script type="module">import '@polymer/paper-input/paper-input.js'</script>
+    <script type="module">import '@polymer/paper-button/paper-button.js'</script>
 </head>
 <body>
+    <script type="module" src="panel.js"></script>
 	<p>
-		Hello, I'm one of the panels in your bundle!
-		I'm where you put your controls.
-	</p>
+		Stream Overlay controls
+	Stream Title</p>
+    <paper-input id="stream-title-input" label="Stream Title"></paper-input>
+    <paper-input id="event-id" label="MTGMelee Event ID"></paper-input>
 
-	<p>To edit me, open "<span id="path" class="monospace"></span>" in your favorite text editor or IDE.</p>
+    <paper-button id="update-pairings">Update Pairings</paper-button>
 
-	<p>
-		You can use any libraries, frameworks, and tools you want.
-		The only limit of panels is that they cannot render outside of their
-		<span class="monospace">&lt;iframe&gt;</span>'s bounding box.
-	</p>
-
-	<p>Visit <a href="https://nodecg.com" target="_blank" rel="noopener">https://nodecg.com</a> for full documentation.</p>
-
-	<p>You've got this!</p>
-
-	<script>
-		document.getElementById('path').textContent = `nodecg${window.location.pathname}`;
-
-		// You can access the NodeCG api anytime from the `window.nodecg` object
-		// Or just `nodecg` for short. Like this!:
-		nodecg.log.info('Here\'s an example of using NodeCG\'s logging API!');
-	</script>
 </body>
 </html>

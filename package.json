@@ -11,8 +11,7 @@
   "files": [
     "dashboard",
     "graphics",
-    "extension.js",
-    "extension"
+    "extension.js"
   ],
   "keywords": [
     "magic",
@@ -22,16 +21,25 @@
   ],
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build",
+    "build-verbose": "parcel build --log-level verbose",
+    "watch": "parcel watch"
   },
   "targets": {
     "graphic": {
       "source": "src/index.html",
-      "distDir": "graphics"
+      "distDir": "graphics",
+      "publicUrl": "./"
     },
     "panel": {
       "source": "src/panel.html",
-      "distDir": "dashboard"
+      "distDir": "dashboard",
+      "publicUrl": "./"
+    },
+    "extension": {
+      "source": "src/extension.js",
+      "main": "extension.js",
+      "publicUrl": "./"
     }
   },
   "nodecg": {
@@ -56,5 +64,11 @@
   "license": "MIT",
   "devDependencies": {
     "parcel": "^2.0.1"
+  },
+  "dependencies": {
+    "@polymer/paper-button": "^3.0.1",
+    "@polymer/paper-input": "^3.2.1",
+    "csv": "^6.0.5",
+    "node-fetch-cookies": "^2.0.3"
   }
 }
