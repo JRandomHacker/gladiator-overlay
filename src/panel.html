@@ -4,16 +4,31 @@
     <meta charset="UTF-8">
     <script type="module">import '@polymer/paper-input/paper-input.js'</script>
     <script type="module">import '@polymer/paper-button/paper-button.js'</script>
+    <script type="module">import '@polymer/paper-dropdown-menu/paper-dropdown-menu.js'</script>
+    <script type="module">import '@polymer/paper-listbox/paper-listbox.js'</script>
+    <script type="module">import '@polymer/paper-item/paper-item.js'</script>
+    <script type="module">import '@polymer/polymer/lib/elements/dom-bind.js'</script>
+    <script type="module">import '@polymer/polymer/lib/elements/dom-repeat.js'</script>
 </head>
 <body>
-    <script type="module" src="panel.js"></script>
-	<p>
-		Stream Overlay controls
-	Stream Title</p>
-    <paper-input id="stream-title-input" label="Stream Title"></paper-input>
-    <paper-input id="event-id" label="MTGMelee Event ID"></paper-input>
+    <dom-bind id="polymer-head">
+    <template>
+        <p>Stream Title</p>
+        <paper-input id="stream-title-input" label="Stream Title"></paper-input>
+        <paper-input id="event-id" label="MTGMelee Event ID"></paper-input>
 
-    <paper-button id="update-pairings">Update Pairings</paper-button>
+        <paper-dropdown-menu id="feature-matches" label="Feature Match">
+            <paper-listbox slot="dropdown-content">
+                <template is="dom-repeat" items="{{matchNames}}" id="matches-list">
+                    <paper-item>{{item}}</paper-item>
+                </template>
+            </paper-listbox>
+        </paper-dropdown-menu>
 
+        <paper-button id="update-pairings">Update Pairings</paper-button>
+
+        <script type="module" src="panel.js"></script>
+    </template>
+    </dom-bind>
 </body>
 </html>

@@ -35,13 +35,9 @@
       "source": "src/panel.html",
       "distDir": "dashboard",
       "publicUrl": "./"
-    },
-    "extension": {
-      "source": "src/extension.js",
-      "main": "extension.js",
-      "publicUrl": "./"
     }
   },
+  "browserslist": "last 2 chrome versions",
   "nodecg": {
     "compatibleRange": "^1.1.1",
     "dashboardPanels": [
@@ -67,8 +63,12 @@
   },
   "dependencies": {
     "@polymer/paper-button": "^3.0.1",
+    "@polymer/paper-dropdown-menu": "^3.2.0",
     "@polymer/paper-input": "^3.2.1",
+    "@polymer/paper-item": "^3.0.1",
+    "@polymer/paper-listbox": "^3.0.1",
+    "@polymer/polymer": "^3.4.1",
     "csv": "^6.0.5",
-    "node-fetch-cookies": "^2.0.3"
+    "request": "^2.88.2"
   }
 }
