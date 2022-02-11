@@ -44,7 +44,7 @@
       {
         "name": "panel",
         "title": "Controls",
-        "width": 2,
+        "width": 5,
         "file": "panel.html",
         "headerColor": "#525F78"
       }
@@ -67,6 +67,7 @@
     "@polymer/paper-input": "^3.2.1",
     "@polymer/paper-item": "^3.0.1",
     "@polymer/paper-listbox": "^3.0.1",
+    "@polymer/paper-toggle-button": "^3.0.1",
     "@polymer/polymer": "^3.4.1",
     "csv": "^6.0.5",
     "request": "^2.88.2"
