@@ -3,7 +3,6 @@ coverage
 bower_components
 graphics
 dashboard
-/extension.js
 .parcel-cache
 .vscode
 *.swp
